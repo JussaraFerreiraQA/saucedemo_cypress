@@ -34,7 +34,7 @@ Dado que o usuário preenche suas credencias válidas
 Quando é realizado login
 Então o login é realizado com sucesso
 
-______________________________________________
+________________________________________________
 
 2. Cenario: Acessar o site com senha inválida
 
@@ -43,7 +43,7 @@ Dado que o usuário preencha dados de acesso com senha inválido
 Quando é realizado login
 Então deve mostrar mensagem de erro
 
-_______________________________________________
+________________________________________________
 
 3. Cenário: Acessar o site com usuário em branco
 
