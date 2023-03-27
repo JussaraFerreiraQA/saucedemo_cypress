@@ -1,0 +1,7 @@
+{
+    "extends": "../../cypress.config.js",
+    "baseUrl": "/",
+    "env":{
+        "enviroment": "saucedemo"
+    }
+}
