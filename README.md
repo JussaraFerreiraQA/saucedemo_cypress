@@ -7,7 +7,7 @@ Senha: secret_sauce
 
 # Teste para o site saucedemo usando Cypress
 
-## Testes realizdos:
+## Testes realizados:
 * Acessar o site com sucesso
 * Acessar o site com senha invalida
 * Acessar o site com usuario em branco
@@ -18,9 +18,9 @@ Senha: secret_sauce
 ## Configurações
 * IDE, preferencialmente VSCode
 * Linhas de comandos:
-    * iniciar o npm: npm init -y
-    * instalar o Cypress na pasta do projeto: npm install cypress
-    * Executar o Cypress: npm run cypress:open
+    * iniciar o npm: npm init
+    * instalar o Cypress na pasta do projeto: npm install cypress –save-dev
+    * Executar o Cypress: npx cypress open
 
 ## Funcionalidade: 
 * Como um usuário adicionando produtos no backpack do site Saucedemo
@@ -31,7 +31,9 @@ Senha: secret_sauce
 
 Contexto:
 Dado que o usuário preenche suas credencias válidas
+
 Quando é realizado login
+
 Então o login é realizado com sucesso
 
 ________________________________________________
@@ -40,7 +42,9 @@ ________________________________________________
 
 Contexto:
 Dado que o usuário preencha dados de acesso com senha inválido
+
 Quando é realizado login
+
 Então deve mostrar mensagem de erro
 
 ________________________________________________
@@ -49,7 +53,9 @@ ________________________________________________
 
 Contexto:
 Dado que o usuário preencha dados de acesso com usuário em branco
+
 Quando é realizado login
+
 Então deve mostrar mensagem de erro
 
 _______________________________________________
@@ -58,7 +64,9 @@ _______________________________________________
 
 Contexto:
 Dado que o usuário preencha dados de acesso com senha em branco
+
 Quando é realizado login
+
 Então deve mostrar mensagem de erro
 
 ________________________________________________
@@ -67,7 +75,9 @@ ________________________________________________
 
 Contexto:
 Dado que o usuário selecionou o produto backpack
+
 Quando o usuário acessa o carrinho
+
 Então o valor do produto deve ser $29.99
 
 ________________________________________________
@@ -76,9 +86,13 @@ ________________________________________________
 
 Contexto:
 Dado que o usuário está na tela de checkout
+
 Quando preenche os ddos name como maria
+
 E last name Silva
+
 Mas não preenche o Post code
+
 Então deve mostrar uma mensagem de erro
 
     
